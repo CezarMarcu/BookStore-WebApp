@@ -41,7 +41,7 @@ export const Poster = styled.img`
     }
 }
 `
-export const GoToShopButton=styled.button`
+export const EnrollButton=styled.button`
     font-size:15px;
     background-color: rgb(255, 253, 251);
     width : 12rem;
@@ -53,6 +53,9 @@ export const GoToShopButton=styled.button`
     border:none;
     border-radius:15px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color:rgb(144, 185, 108);
+        color:white;
     
     
 `
