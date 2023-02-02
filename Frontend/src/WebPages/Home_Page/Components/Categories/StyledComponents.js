@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CategoriesContainer = styled.div`
     width: 100%;
     height: 30rem;
-    top: 32rem;
+    top: 33rem;
     position: absolute;
     background-color: rgb(255, 255, 255);
     display: block;

@@ -2,16 +2,12 @@ import styled from "styled-components";
 
 export const PrompterContainer = styled.div`
     width: 100%;
-    height: 40rem;
+    height: 32.4rem;
     background-color: rgb(244, 244, 244);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     animation: slideUp 1s;
     position:absolute;
-    justify-content: center;
-    align-items: center;
     display: block;
-    gap:1px;
-
     @keyframes slideUp{
     0% {
             transform: translateY(10rem);
@@ -23,9 +19,10 @@ export const PrompterContainer = styled.div`
 
 `
 export const Poster = styled.img`
-    width: 77rem;
-    height: fit-content;
-    block-size: fit-content;
+    width: 100%;
+    position:absolute;
+    display:flexbox;
+    top:-4rem;
     animation:slideTop 3s;
     transition: transform 1s;
     border-radius: 5px;
