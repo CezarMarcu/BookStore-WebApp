@@ -1,10 +1,8 @@
-import './Style.css'
+import './Style.css';
 
-export default function ContentContainer (props) {
-    const classes = 'ContentContainer'
-    return(
-        <>
-            <div className={classes}>{props.children}</div>
-        </>
-    )
-}
+const ContentContainer = (props) => {
+  const classes = 'contentContainer ' + props.className;
+  return <div className={classes}>{props.children}</div>;
+};
+
+export default ContentContainer;
