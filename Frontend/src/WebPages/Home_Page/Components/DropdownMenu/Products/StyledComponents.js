@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const DropDownContainer = styled.div`
-    width: 100%;
+export const ProductsContainer = styled.div`
+    width: 24.1%;
     height: auto;
     top:3.1rem;
     background-color: rgb(255, 255, 255);

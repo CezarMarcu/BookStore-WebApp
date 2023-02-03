@@ -14,7 +14,7 @@ export const Icon = styled.img`
     padding-left:8px;
 `
 export const ProductContainer = styled.div`
-    background-color:rgb(250, 250, 250);
+    background-color:rgb(245, 245, 245);
     position:relative;
     left:0rem;
     border:2px;
@@ -23,12 +23,12 @@ export const ProductContainer = styled.div`
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:15rem;
+    width:100%;
     height:3rem;
-    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     gap:30px;
     &:hover{
-        background-color:rgb(240, 240, 240);
+        background-color:rgb(255, 255, 255);
     }
 
 `

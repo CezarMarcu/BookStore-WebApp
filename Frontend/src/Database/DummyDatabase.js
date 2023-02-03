@@ -3,11 +3,11 @@ const img2 = require("./Resources/Tea.png");
 const img3 = require("./Resources/Courses.png");
 const img4 = require("./Resources/Posters.png");
 const img5 = require("./Resources/Tshirt.png");
-const img6 = require("./Resources/Book.png");
-const img7 = require("./Resources/Book.png");
-const img9 = require("./Resources/Book.png");
-const img10 = require("./Resources/Book.png");
-const img11 = require("./Resources/Book.png");
+const img6 = require("./Resources/Manga.png");
+const img7 = require("./Resources/Magazine.png");
+const img9 = require("./Resources/Movies.png");
+const img10 = require("./Resources/Podcast.png");
+const img11 = require("./Resources/Papetery.png");
 
 
 export const CategoriesData = [

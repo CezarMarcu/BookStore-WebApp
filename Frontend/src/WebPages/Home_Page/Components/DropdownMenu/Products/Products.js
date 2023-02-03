@@ -1,16 +1,16 @@
 import React from "react";
 import Product from "../Product/Product";
-import { DropDownContainer } from "./StyledComponents";
+import { ProductsContainer } from "./StyledComponents";
 
-const DropDownMenu = (props) => {
+const Products = (props) => {
     return(
-        <DropDownContainer>
+        <ProductsContainer>
             {
                 props.items.map(element => <Product name={element.name} source={element.source}></Product>)
             }
-        </DropDownContainer>        
+        </ProductsContainer>        
     )
 
 }
 
-export default DropDownMenu
+export default Products
