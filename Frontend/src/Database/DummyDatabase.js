@@ -9,6 +9,29 @@ const img9 = require("./Resources/Movies.png");
 const img10 = require("./Resources/Podcast.png");
 const img11 = require("./Resources/Papetery.png");
 
+export const ProductCategories = [
+    {name:"Audiobooks", subcategories:[]},
+
+    {name:"Arta si Arhitectura", 
+    subcategories:[
+        "Teoria Artei", "Istoria Artei","Fotografie","Modelare 3D", "Arta Moderna"]
+    },
+    
+    {name:"Enciclopedii", subcategories:["Zoologie", "Anatomie", "Atlase"]},
+    
+    {name:"Biografii, Memorii, Jurnale", subcategories:[]},
+    
+    {name:"Lingvistica, Dictionare", subcategories:["Gramatica", "Lingvistica", "Dictionare"]},
+    
+    {name:"Limbi straine", subcategories:[]},
+    
+    {name:"Poezii,Teatru,Studii Literare", subcategories:["Analize literare", "Critici", "Momente si schite","Piese de teatru"]},
+    
+    {name:"Fictiune", subcategories:["SF","Clasici","Aventura","Fantezie"]},
+    
+    {name:"Crestinism", subcategories:["Traduceri", "Scrieri celebre","Interpretari","Apologii"]},
+
+]
 
 export const CategoriesData = [
     {name:"CARTI", source:img1},
@@ -21,4 +44,10 @@ export const CategoriesData = [
     {name:"FILME", source:img9},
     {name:"PODCASTURI", source:img10},
     {name:"PAPETARIE", source:img11},
+    {name:"JUCARII", source:img11},
+    {name:"JOCURI", source:img11},
+    {name:"APPLE", source:img11},
+    {name:"DESENE", source:img11},
+    {name:"GOURMET", source:img11},
+
 ]

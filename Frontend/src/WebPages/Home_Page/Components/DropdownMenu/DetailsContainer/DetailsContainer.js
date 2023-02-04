@@ -1,22 +1,26 @@
 import { Container } from "./StyledComponents";
 import { Categories } from "./StyledComponents";
 import { Category } from "./StyledComponents";
+import { SubCategories } from "./StyledComponents";
+import { SubCategory } from "./StyledComponents";
 
-const DetailsContainer = () => {
+const DetailsContainer = (props) => {
     return(
         <Container>
             <Categories>
-                <Category>Audiobooks</Category>
-                <Category>Arta si Arhitectura</Category>
-                <Category>Culinare</Category>
-                <Category>Enciclopedii</Category>
-                <Category>Biografii, Jurnale, Memorii</Category>
-                <Category>Lingvistica, Dictionare</Category>
-                <Category>Poezie, Teatru, Studii literare</Category>
-                <Category>Fictiune</Category>
+                {props.items.map(
+                    item =>
+                        <>
+                        <Category>{item.name}</Category>
+                        <SubCategories>
+                            {item.subcategories.map(subategory=>
+                                <SubCategory>{subategory}</SubCategory>)}
+                        </SubCategories>
+                        </>
+                        )
+                }
             </Categories>
         </Container>
     )
 }
-
 export default DetailsContainer
