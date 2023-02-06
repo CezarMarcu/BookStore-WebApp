@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    position:relative;
-    left:17rem;
+    position:absolute;
+    left:19rem;
     width:75.5%;
-    height:auto;
+    height:100%;
     background:white;
 `
 export const Categories = styled.ul`
@@ -15,6 +15,7 @@ export const Category = styled.p`
     font-size:14px;
     margin-top:-10px;
     font-weight:bold;
+    top:-3rem;
     position:relative;
     display:flex;
     width:15rem;
@@ -27,7 +28,8 @@ export const Category = styled.p`
 `
 export const SubCategories = styled.ul`
   position:relative;
-  bottom:1rem;
+  top:-4rem;
+  left:-1rem;
 `
 export const SubCategory = styled.a`
     display:flex;

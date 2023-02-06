@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
+    position:absolute;
     width: 24.1%;
-    height: auto;
-    top:3.1rem;
-    background-color: rgb(255, 255, 255);
+    height: 100%;
+    top:0rem;
+    background-color: rgb(225, 225, 225);
     position:absolute;
     display: flex;
     flex-direction: column;
