@@ -50,7 +50,7 @@ export const Logo = styled.img`
     display: flex-box;
     right:37rem;
     height: 3rem;
-    width: 3rem;
+    width: 5rem;
     top: 0.3rem;
     @keyframes fadeIn {
     0% {

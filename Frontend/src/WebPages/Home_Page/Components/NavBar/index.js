@@ -2,11 +2,15 @@
 *                                           Imports
 =====================================================================================================*/
 import logo from './Resources/Logo.png'
-import {DropDownElement,DropDownContent,Container,Logo, NavButton,NavButtons,ProductsButton} from './StyledComponents'
+import {Container,Logo, NavButton,ProductsButton} from './StyledComponents'
+import DropDownMenu from '../DropdownMenu/DropMenuContainer'
+import { useState } from 'react'
 /*===================================================================================================
 *                                    Navigation Bar Component
 =====================================================================================================*/
-export default function NavBar(props){
+export default function NavBar(){
+    const [isOpen, setIsOpen] = useState(false);
+
     return(
         <div>  
             <Container>

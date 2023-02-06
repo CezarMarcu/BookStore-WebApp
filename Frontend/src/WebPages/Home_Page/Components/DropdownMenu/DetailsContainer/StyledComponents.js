@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position:relative;
-    left:19rem;
+    left:17rem;
     width:75.5%;
     height:auto;
     background:white;
 `
 export const Categories = styled.ul`
-    gap:0;
+    position:relative;
+    top:2rem;
 `
 export const Category = styled.p`
     font-size:14px;
+    margin-top:-10px;
     font-weight:bold;
+    position:relative;
     display:flex;
     width:15rem;
-    top:0.5rem;
     height:1.2rem;
     padding-left:0rem;
     &:hover {
@@ -36,4 +38,3 @@ export const SubCategory = styled.a`
         background-color:rgb(80, 135, 82);
         color:white;
 `
-

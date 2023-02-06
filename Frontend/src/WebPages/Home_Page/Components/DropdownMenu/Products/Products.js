@@ -6,7 +6,7 @@ const Products = (props) => {
     return(
         <ProductsContainer>
             {
-                props.items.map(element => <Product name={element.name} source={element.source}></Product>)
+                props.items.map((element,index) => <Product key={index} name={element.name} source={element.source}></Product>)
             }
         </ProductsContainer>        
     )

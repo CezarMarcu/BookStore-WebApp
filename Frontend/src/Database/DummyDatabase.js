@@ -13,23 +13,39 @@ export const ProductCategories = [
     {name:"Audiobooks", subcategories:[]},
 
     {name:"Arta si Arhitectura", 
-    subcategories:[
-        "Teoria Artei", "Istoria Artei","Fotografie","Modelare 3D", "Arta Moderna"]
+    subcategories:["Istoria Artei",
+     "Arta Moderna",
+     "Fotografie",
+     "Muzica",
+     "Istoria Muzicii",
+     "Muzica Clasica",
+     "Modelarea 3D",
+     "Clasici in Muzica"]
     },
     
-    {name:"Enciclopedii", subcategories:["Zoologie", "Anatomie", "Atlase"]},
+    {name:"Enciclopedii", subcategories:[
+        "Zoologie","Anatomie","Botanica","Cultura generala","Atlas"
+    ]},
     
     {name:"Biografii, Memorii, Jurnale", subcategories:[]},
     
-    {name:"Lingvistica, Dictionare", subcategories:["Gramatica", "Lingvistica", "Dictionare"]},
+    {name:"Lingvistica, Dictionare", subcategories:[
+        "Gramatica", "Fonetica", "Sintaxa & Morfologie"
+    ]},
     
     {name:"Limbi straine", subcategories:[]},
     
-    {name:"Poezii,Teatru,Studii Literare", subcategories:["Analize literare", "Critici", "Momente si schite","Piese de teatru"]},
+    {name:"Poezii,Teatru,Studii Literare", subcategories:[
+        "Clasici", "Momente si Schite","Critici","Analize","Piese"
+    ]},
     
-    {name:"Fictiune", subcategories:["SF","Clasici","Aventura","Fantezie"]},
+    {name:"Fictiune", subcategories:[
+        "Fantezie", "Clasici","Aventura","SF"
+    ]},
     
-    {name:"Crestinism", subcategories:["Traduceri", "Scrieri celebre","Interpretari","Apologii"]},
+    {name:"Crestinism", subcategories:[
+        "Apologii", "Traduceri","Scrieri alternative","Interpretari","Predici","Marturisiri", "Studiu"
+    ]},
 
 ]
 

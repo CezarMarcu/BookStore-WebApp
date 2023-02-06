@@ -8,15 +8,14 @@ const DetailsContainer = (props) => {
     return(
         <Container>
             <Categories>
-                {props.items.map(
-                    item =>
-                        <>
-                        <Category>{item.name}</Category>
-                        <SubCategories>
-                            {item.subcategories.map(subategory=>
-                                <SubCategory>{subategory}</SubCategory>)}
-                        </SubCategories>
-                        </>
+                {props.items.map((item,index) =>
+                        <Categories key={index}>
+                            <Category key={index + 1}>{item.name}</Category>
+                                <SubCategories key={index + 2}>
+                                    {item.subcategories.map((subategory, index)=>
+                                    <SubCategory key={index}>{subategory}</SubCategory>)}
+                                </SubCategories>
+                        </Categories>
                         )
                 }
             </Categories>
