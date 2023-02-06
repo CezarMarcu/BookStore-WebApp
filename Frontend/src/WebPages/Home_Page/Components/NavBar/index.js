@@ -1,7 +1,7 @@
 /*===================================================================================================
 *                                           Imports
 =====================================================================================================*/
-import logo from './Resources/Logo.png'
+import logo from './Resources/Logo1.png'
 import {Container,Logo, NavButton,ProductsButton} from './StyledComponents'
 import DropDownMenu from '../DropdownMenu/DropMenuContainer'
 import { useState } from 'react'
