@@ -9,12 +9,13 @@ import { useState } from 'react'
 *                                    Navigation Bar Component
 =====================================================================================================*/
 export default function NavBar(){
-    const [isOpen, setIsOpen] = useState(false);
-
+    const [showDropDown, setShowDropDown] = useState(false)
+    const onClick = () => showDropDown===true ? setShowDropDown(false) : setShowDropDown(true);
     return(
         <div>  
             <Container>
-                <ProductsButton>PRODUSE</ProductsButton>
+                {showDropDown ? <DropDownMenu /> : null}
+                <ProductsButton onClick={onClick}>PRODUSE</ProductsButton>
                 <NavButton>DETALII</NavButton>
                 <NavButton>LOGIN</NavButton>
                 <Logo src={logo}></Logo>

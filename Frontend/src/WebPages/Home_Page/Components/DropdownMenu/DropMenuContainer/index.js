@@ -7,7 +7,7 @@ import { ProductCategories } from "../../../../../Database/DummyDatabase"
 
 const DropDownMenu = (props) => {{
          return(
-                <Container id="DropMenu">
+                <Container>
                     <DetailsContainer items = {ProductCategories}></DetailsContainer>
                     <Products items={CategoriesData}></Products>
                 </Container>        

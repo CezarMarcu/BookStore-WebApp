@@ -8,8 +8,9 @@ export default function HomePage () {
         <>  
             <Header></Header>
             <Content_Container>
-                <DropDownMenu></DropDownMenu>
-
+                <Prompter></Prompter>
+                <NavBar></NavBar>
+                
             </Content_Container>
                     
         </>
