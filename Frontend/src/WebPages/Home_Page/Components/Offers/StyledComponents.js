@@ -4,14 +4,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     width:100%;
-    height:12rem;
-    background:white;
+    height:10rem;
+    animation: slideLeft 1.5s;
+    background:transparent;
     position:absolute;
     top:32.6rem;
+    @keyframes slideLeft{
+    0% {
+            transform: translateX(-25rem);
+            opacity: 0;
+        }
+    100%{
+        opacity: 1;
 `
 export const Offer = styled.div`
     width:33.3%;
-    height:70%;
+    height:100%;
     background:transparent;
     margin-left:5px;
     `
