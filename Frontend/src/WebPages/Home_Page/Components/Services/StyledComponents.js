@@ -8,7 +8,7 @@ export const Container = styled.div`
     animation: slideRight 1.5s;
     background:white;
     position:absolute;
-    top:43rem;
+    top:45.3rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); 
     @keyframes slideRight{
     0% {

@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     width:100%;
-    height:10rem;
+    height:12rem;
     animation: slideLeft 1.5s;
     background:transparent;
     position:absolute;
@@ -26,7 +26,7 @@ export const Offer = styled.div`
 export const OfferCard = styled.img`
     width:100%;
     height:100%;
-    border-radius:5px;
+    border-radius:10px;
     
     
 `
