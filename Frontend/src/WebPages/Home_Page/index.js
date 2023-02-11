@@ -16,8 +16,8 @@ export default function HomePage () {
                 <Presales items={PresaleProducts}></Presales>
                 <Services></Services>
                 <Prompter></Prompter>
-                <NavBar></NavBar>
                 <Offers></Offers>
+                <NavBar></NavBar>
             </Content_Container>
                     
         </>

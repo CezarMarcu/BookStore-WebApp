@@ -37,7 +37,8 @@ export const Price = styled.p`
     position:relative;
     top:-0.5rem;
     left:4rem;
-    font-family: Segoe UI;
+    font-family: Poppins;
+    font-wight:bold;
 `
 export const Tag = styled.div`
     width:6rem;
@@ -48,6 +49,6 @@ export const Tag = styled.div`
     color:white;
     font-family:'Source Code Pro';
     position:relative;
-    top:-2.7rem;
+    top:-3.7rem;
     left:-0.5rem;
 `
