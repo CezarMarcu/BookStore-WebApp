@@ -3,26 +3,51 @@ import styled from "styled-components";
 export const Container = styled.div`
     margin-left:5rem;
     margin-top:3rem;
-    height:26rem;
+    height:27rem;
     width:17rem;
     background:white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+    transition: transform .4s;
+    &: hover {
+        transform: scale(1.3);
+} 
 `
 export const ProductImage = styled.img`
     height:18rem;
     width:11.5rem;
+    margin-top:15px;
 `
 export const Title = styled.p`
-    font-size:14px;
-    font-weight: bold;
-    font-family: 'Source Code Pro'
+    font-size:16px;
+    position:relative;
+    font-family: 'Source Code Pro';
+    top:-0.5rem;
+    font-weight:bold;
 
 `
 export const Author = styled.p`
-    font-size:12px;
+    font-size:14px;
     color:red;
+    font-family: 'Source Code Pro';
+    position:relative;
+    top:-1rem;
 `
 export const Price = styled.p`
-    font-size:16px;
+    font-size:21px;
+    position:relative;
+    top:-0.5rem;
+    left:4rem;
+    font-family: Segoe UI;
 `
-export const PreCommandButton = styled.p``
+export const Tag = styled.div`
+    width:6rem;
+    height:1.5rem;
+    background:rgb(1, 101, 153);
+    border:0px;
+    font-size:10px;
+    color:white;
+    font-family:'Source Code Pro';
+    position:relative;
+    top:-2.7rem;
+    left:-0.5rem;
+`

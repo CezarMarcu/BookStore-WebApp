@@ -6,9 +6,11 @@ const Presales  = (props) => {
         <Container>
             <Title>PRECOMENZI</Title>
             <ProductsContainer>
-                <PresaleProduct></PresaleProduct>
-                <PresaleProduct></PresaleProduct>
-                <PresaleProduct></PresaleProduct>
+                {
+                    props.items.map((item, index)=>
+                    <PresaleProduct key={index} title={item.name} author={item.author.toUpperCase()} price={item.price} img={item.img}></PresaleProduct>
+                    )
+                }
             </ProductsContainer>
         </Container>
     )

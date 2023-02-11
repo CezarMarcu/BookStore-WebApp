@@ -8,6 +8,7 @@ const DetailsContainer = (props) => {
     return(
         <Container>
             <Categories>
+                
                 {props.items.map((item,index) =>
                         <Categories key={index}>
                             <Category key={index + 1}>{item.name}</Category>

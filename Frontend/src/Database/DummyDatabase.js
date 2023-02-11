@@ -8,6 +8,16 @@ const img7 = require("./Resources/Magazine.png");
 const img9 = require("./Resources/Movies.png");
 const img10 = require("./Resources/Podcast.png");
 const img11 = require("./Resources/Papetery.png");
+const product1 = require("./Resources/product1.jpg");
+const product2 = require("./Resources/product2.jpg");
+const product3 = require("./Resources/product3.jpg")
+
+
+export const PresaleProducts = [
+    {name: "Mantuitorul Dunei",author:"Frank Herbert", price:"64.00lei", img:product1},
+    {name: "Cruciada Masinilor", author:"Frank Herbert", price:"64.00lei", img:product2},
+    {name:"Jihadul Budlerian", author:"Frank Herbert", price:"64.00lei", img:product3}
+]
 
 export const ProductCategories = [
     {name:"Audiobooks", subcategories:[]},

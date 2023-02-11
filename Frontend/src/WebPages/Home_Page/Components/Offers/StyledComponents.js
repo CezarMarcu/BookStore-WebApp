@@ -22,6 +22,10 @@ export const Offer = styled.div`
     height:100%;
     background:transparent;
     margin-left:5px;
+    transition: transform .8s;
+    &: hover {
+        transform: scale(1.9);
+        z-index:+1;
     `
 export const OfferCard = styled.img`
     width:100%;
