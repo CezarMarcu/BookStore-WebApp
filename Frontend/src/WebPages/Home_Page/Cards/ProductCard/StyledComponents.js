@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-left:5rem;
     margin-top:3rem;
     height:27rem;
-    width:17rem;
+    width:19rem;
     background:white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
     transition: transform .4s;
     &: hover {
         transform: scale(1.3);
+        z-index:1;
 } 
 `
 export const ProductImage = styled.img`

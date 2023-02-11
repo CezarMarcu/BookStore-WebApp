@@ -1,10 +1,10 @@
 import { Container,Title,ProductsContainer } from "./StyledComponents"
 import PresaleProduct from "../../Cards/ProductCard/index"
 
-const Presales  = (props) => {
+const ReducedProducts  = (props) => {
     return(
         <Container>
-            <Title>PRECOMENZI</Title>
+            <Title>Fantasy, all you can read</Title>
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>
@@ -16,4 +16,4 @@ const Presales  = (props) => {
     )
 
 }
-export default Presales
+export default ReducedProducts

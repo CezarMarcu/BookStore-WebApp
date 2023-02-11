@@ -7,12 +7,16 @@ import Offers from "./Components/Offers"
 import Services from "./Components/Services"
 import Presales from "./Components/PreComands"
 import { PresaleProducts } from "../../Database/DummyDatabase"
+import { ReduceProducts } from "../../Database/DummyDatabase"
+import ReducedProducts from "./Components/ReducedProducts"
+
 
 export default function HomePage () {
     return (
         <>  
             <Header></Header>
             <Content_Container>
+                <ReducedProducts items={ReduceProducts}></ReducedProducts>
                 <Presales items={PresaleProducts}></Presales>
                 <Services></Services>
                 <Prompter></Prompter>

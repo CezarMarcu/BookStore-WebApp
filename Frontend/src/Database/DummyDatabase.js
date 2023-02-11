@@ -11,12 +11,26 @@ const img11 = require("./Resources/Papetery.png");
 const product1 = require("./Resources/product1.jpg");
 const product2 = require("./Resources/product2.jpg");
 const product3 = require("./Resources/product3.jpg")
+const product4 = require("./Resources/product4.jpg")
+const product5 = require("./Resources/product5.jpg");
+const product6 = require("./Resources/product6.jpg");
+const product7 = require("./Resources/product7.jpg")
+const product8 = require("./Resources/product8.jpg")
+
 
 
 export const PresaleProducts = [
     {name: "Mantuitorul Dunei",author:"Frank Herbert", price:"64.00lei", img:product1},
     {name: "Cruciada Masinilor", author:"Frank Herbert", price:"64.00lei", img:product2},
-    {name:"Jihadul Budlerian", author:"Frank Herbert", price:"64.00lei", img:product3}
+    {name:"Jihadul Budlerian", author:"Frank Herbert", price:"64.00lei", img:product3},
+    {name: "Batalia Corinului",author:"Frank Herbert", price:"64.00lei", img:product4}
+]
+
+export const ReduceProducts = [
+    {name: "Urzeala Tronurilor",author:"George R.R. Martin", price:"64.00lei", img:product5},
+    {name: "Inclestarea Regilor", author:"George R.R. Martin", price:"64.00lei", img:product6},
+    {name:"Iuresul Sabiilor", author:"George R.R. Martin", price:"64.00lei", img:product7},
+    {name: "Festinul Ciorilor",author:"George R.R. Martin", price:"64.00lei", img:product8}
 ]
 
 export const ProductCategories = [

@@ -5,7 +5,7 @@ export const Container = styled.div`
     position:absolute;
     height:auto;
     width:100%;
-    top:59.8rem;
+    top:89.8rem;
     background:white;
     display:flex;
     flex-direction: row;
@@ -15,16 +15,18 @@ export const Title = styled.p`
     display:flex;
     font-size:30px;
     font-family:'Source Code Pro';
-    margin-left:6rem;
-    left:-4rem;
+    margin-right:6rem;
+    right:-62rem;
     margin-top:20%;
 `
 export const ProductsContainer = styled.div`
+    position:relative;
     display:flex;
     flex-direction:row;
     height:100%;
     width:75%;
-    right:0px;
-    gap:30px;
     background:white;
+    gap:30px;
+    left:-19rem;
+    margin-bottom:5rem;
 `
