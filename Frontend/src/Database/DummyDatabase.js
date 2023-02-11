@@ -16,6 +16,11 @@ const product5 = require("./Resources/product5.jpg");
 const product6 = require("./Resources/product6.jpg");
 const product7 = require("./Resources/product7.jpg")
 const product8 = require("./Resources/product8.jpg")
+const product9 = require("./Resources/product9.jpg");
+const product10 = require("./Resources/product10.jpg");
+const product11 = require("./Resources/product11.jpg")
+const product12 = require("./Resources/product12.jpg")
+
 
 
 
@@ -31,6 +36,13 @@ export const ReduceProducts = [
     {name: "Inclestarea Regilor", author:"George R.R. Martin", price:"64.00lei", img:product6},
     {name:"Iuresul Sabiilor", author:"George R.R. Martin", price:"64.00lei", img:product7},
     {name: "Festinul Ciorilor",author:"George R.R. Martin", price:"64.00lei", img:product8}
+]
+
+export const ComicMagazines = [
+    {name: "Injustice Gods Among Us",author:"George R.R. Martin", price:"64.00lei", img:product9},
+    {name: "Deadpool the greatest hero", author:"George R.R. Martin", price:"64.00lei", img:product10},
+    {name:"Deadpool and Cable", author:"George R.R. Martin", price:"64.00lei", img:product11},
+    {name: "Deadpool",author:"George R.R. Martin", price:"64.00lei", img:product12}
 ]
 
 export const ProductCategories = [

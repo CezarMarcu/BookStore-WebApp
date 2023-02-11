@@ -9,13 +9,15 @@ import Presales from "./Components/PreComands"
 import { PresaleProducts } from "../../Database/DummyDatabase"
 import { ReduceProducts } from "../../Database/DummyDatabase"
 import ReducedProducts from "./Components/ReducedProducts"
-
+import Comics from "./Components/Comics"
+import { ComicMagazines } from "../../Database/DummyDatabase"
 
 export default function HomePage () {
     return (
         <>  
             <Header></Header>
             <Content_Container>
+                <Comics items = {ComicMagazines}></Comics>
                 <ReducedProducts items={ReduceProducts}></ReducedProducts>
                 <Presales items={PresaleProducts}></Presales>
                 <Services></Services>
