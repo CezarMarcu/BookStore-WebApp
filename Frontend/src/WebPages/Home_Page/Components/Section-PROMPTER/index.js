@@ -1,7 +1,8 @@
 import poza from './Resoruces/Cover6.png'
 import { PrompterContainer, Poster,EnrollButton } from './StyledComponents'
 
-export default function DummyPrompter () {
+
+const Prompter = () =>{
     return(
             <PrompterContainer>
                 <Poster src={poza}></Poster>
@@ -9,3 +10,4 @@ export default function DummyPrompter () {
             </PrompterContainer>
     )
 }
+export default Prompter

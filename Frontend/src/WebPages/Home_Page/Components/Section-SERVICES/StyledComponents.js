@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     width:100%;
-    height:auto;
+    height:15rem;
     animation: slideRight 5s;
     background:transparent;
     top:45.3rem;
@@ -33,9 +33,11 @@ background:transparent;
 `
 export const Description = styled.p`
     font-family: 'Roboto Slab';
-    font-size:13px;
+    font-size:14px;
+    margin:auto;
 `
 export const Title = styled.p`
     font-family: 'Roboto Slab';
     font-size:16px;
+    font-weight:900;
 `

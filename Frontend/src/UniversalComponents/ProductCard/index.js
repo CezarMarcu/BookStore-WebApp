@@ -2,7 +2,7 @@ import { Container,ProductImage,Title,Author,Price,Tag, Time} from "./StyledComp
 import { ProductImageContainer,ProductDetailsContainer, ProductPriceTagContainer,PriceDecimal,DeliveryTag } from "./StyledComponents"
 
 
-const DummyProductCard  = (props) => {
+const ProductCard  = (props) => {
     const priceComponent = props.price.split(".")
     return(
         <Container>
@@ -23,4 +23,4 @@ const DummyProductCard  = (props) => {
         </Container>
     )
 }
-export default DummyProductCard
+export default ProductCard

@@ -1,18 +1,18 @@
 import { Container,Title,ProductsContainer } from "./StyledComponents"
-import DummyProductCard from "../../../../../UniversalComponents/ProductCard"
+import ProductCard from "../../../../UniversalComponents/ProductCard"
 
-const DummyReduced  = (props) => {
+const Reduced  = (props) => {
     return(
         <Container>
             <Title>FANTASY, ALL YOU CAN READ</Title>
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>
-                    <DummyProductCard key={index} title={item.name} author={item.author.toUpperCase()} price={item.price} img={item.img} status={item.status}></DummyProductCard>
+                    <ProductCard key={index} title={item.name} author={item.author.toUpperCase()} price={item.price} img={item.img} status={item.status}></ProductCard>
                     )
                 }
             </ProductsContainer>
         </Container>
     )
 }
-export default DummyReduced
+export default Reduced

@@ -4,7 +4,7 @@ import delivery from "./Resources/Delivery.png"
 import easybox from "./Resources/Easybox.png"
 
 
-const DummyServices = () =>{
+const Services = () =>{
     return(
         <Container>
 
@@ -35,5 +35,4 @@ const DummyServices = () =>{
         </Container>
     )
 }
-
-export default DummyServices
+export default Services

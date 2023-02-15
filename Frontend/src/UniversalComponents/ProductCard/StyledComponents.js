@@ -41,7 +41,6 @@ export const ProductPriceTagContainer = styled.div`
     margin-top:2.5rem;
     padding: 3px;
 `
-
 export const ProductImage = styled.img`
     height:18rem;
     width:11.5rem;
@@ -50,35 +49,36 @@ export const Title = styled.p`
     font-size:16px;
     position:relative;
     font-family: 'Roboto Slab';
-    font-weight:bold;
+    font-weight:900;
     top:-0.5rem;
 `
 export const Author = styled.p`
-    font-size:14px;
     color:red;
     font-family: 'Source Code Pro';
+    font-size:14px;
+    font-weight:200;
     position:relative;
     top:-1rem;
 `
 export const Price = styled.p`
-    font-size:18px;
     position:relative;
     top:-1.5rem;
     left:3rem;
     font-family: 'Roboto Slab';
-    font-weight:700;
+    font-size:20px;
+    font-weight:900;
     color:rgb(125,124,119)
 `
 export const PriceDecimal = styled.sup`
     font-size:0.6em;
     left:3rem;
     font-family: 'Roboto Slab';
-    font-weight:700;
+    font-weight:900;
 `
 export const Currency = styled.p`
     font-size:18px;
     font-family: 'Roboto Slab';
-    font-weight:700;
+    font-weight:300;
 `
 export const Tag = styled.div`
     width:${props => props.status === "IN STOC" ||props.status === "LIMITAT" ? '3.4rem' : '6rem'};
@@ -89,9 +89,9 @@ export const Tag = styled.div`
     :'rgb(185,51,24)'};
     border-radius:0.2rem;
     color:${props=>props.status === "IN STOC" ? 'black':'white'};
-    font-family: 'Roboto Slab' serif;
+    font-family: 'Roboto Slab'serif;
     font-size:12px;
-    font-wight:400;
+    font-weight:600;
     position:relative;
     top:-4rem;
     left:-1.9rem;

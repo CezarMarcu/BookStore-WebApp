@@ -2,7 +2,8 @@ import { Container, Offer,OfferCard } from "./StyledComponents"
 import offer1 from "./Resources/Offer1.png"
 import offer2 from "./Resources/Offer2.png"
 import offer3 from "./Resources/Offer3.png"
-const DummyOffers = () =>{
+
+const Offers = () =>{
     return(
         <Container>
             <Offer>
@@ -19,4 +20,4 @@ const DummyOffers = () =>{
         </Container>
     )
 }
-export default DummyOffers
+export default Offers

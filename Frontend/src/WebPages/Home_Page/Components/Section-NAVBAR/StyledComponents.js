@@ -16,7 +16,8 @@ export const NavButton = styled.button`
     float:right;
     background-color: white;
     border-style: none;
-    font-family: 'Source Code Pro';
+    font-family: 'Roboto Slab';
+    font-weight:900;
     font-size:16px;;
     color:black;
     animation: fadeIn 2s;
@@ -58,7 +59,8 @@ export const ProductsButton = styled.button`
     float:left;
     background-color:transparent;
     border-style: none;
-    font-family: 'Source Code Pro';
+    font-family: 'Roboto Slab';
+    font-weight:900;
     font-size:16px;
     color:black;
     animation: fadeIn 2s;

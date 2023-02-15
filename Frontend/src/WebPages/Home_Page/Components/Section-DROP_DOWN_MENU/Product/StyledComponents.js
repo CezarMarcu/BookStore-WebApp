@@ -5,7 +5,7 @@ export const LinkButton = styled.p`
     top:10px;
     font-family: 'Roboto Slab';
     font-size:15px;
-    font-wight:900;
+    font-weight:900;
     left:5rem;
     margin: auto;
 `

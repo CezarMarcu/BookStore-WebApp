@@ -1,19 +1,18 @@
 import { Container,Title,ProductsContainer } from "./StyledComponents"
-import DummyProductCard from "../../../../../UniversalComponents/ProductCard/index"
+import ProductCard from "../../../../UniversalComponents/ProductCard"
 
-const DummyPresales  = (props) => {
+const Presales  = (props) => {
     return(
         <Container>
             <Title>PRECOMENZI</Title>
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>
-                    <DummyProductCard key={index} title={item.name} author={item.author.toUpperCase()} price={item.price} img={item.img} status={item.status}></DummyProductCard>
+                    <ProductCard key={index} title={item.name} author={item.author.toUpperCase()} price={item.price} img={item.img} status={item.status}></ProductCard>
                     )
                 }
             </ProductsContainer>
         </Container>
     )
-
 }
-export default DummyPresales
+export default Presales

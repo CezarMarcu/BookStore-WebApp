@@ -1,29 +1,33 @@
+import "./Home.css"
+
 import PageContent from "../../UniversalComponents/Content_Card"
 import Header from "../../UniversalComponents/Header"
+
 import { PresaleProducts } from "../../Database/DummyDatabase"
 import { ReduceProducts } from "../../Database/DummyDatabase"
 import { ComicMagazines } from "../../Database/DummyDatabase"
-import DummyContainer from "./Components/DummyComponent/DummyNavbar"
-import DummyPrompter from "./Components/DummyComponent/DummyPrompter"
-import DummyOffers from "./Components/DummyComponent/DummyOffers"
-import "./Home.css"
-import DummyServices from "./Components/DummyComponent/DummyServices"
-import DummyPresales from "./Components/DummyComponent/DummyPresales"
-import DummyReduced from "./Components/DummyComponent/DummyReduced"
-import DummyComics from "./Components/DummyComponent/DummyCommics"
+
+import Navbar from "./Components/Section-NAVBAR"
+import Prompter from "./Components/Section-PROMPTER"
+import Offers from "./Components/Section-OFFERS"
+import Services from "./Components/Section-SERVICES"
+import Presales from "./Components/Section-PRESALES"
+import Reduced from "./Components/Section-REDUCED"
+import Comics from "./Components/Section-COMICS"
+
 
 export default function HomePage () {
     return (
         <>  
             <Header></Header>
             <PageContent>
-                <DummyContainer></DummyContainer>
-                <DummyPrompter></DummyPrompter>
-                <DummyOffers></DummyOffers>
-                <DummyServices></DummyServices>
-                <DummyPresales items={PresaleProducts}></DummyPresales>
-                <DummyReduced items={ReduceProducts}></DummyReduced>
-                <DummyComics items = {ComicMagazines}></DummyComics>
+                <Navbar></Navbar>
+                <Prompter></Prompter>
+                <Offers></Offers>
+                <Services></Services>
+                <Presales items={PresaleProducts}></Presales>
+                <Reduced items={ReduceProducts}></Reduced>
+                <Comics items = {ComicMagazines}></Comics>
             </PageContent>
        
         
