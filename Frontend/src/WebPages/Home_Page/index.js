@@ -1,31 +1,32 @@
-import Content_Container from "./Cards"
-import Header from "./Header/index"
-import Prompter from "./Components/Prompter/index"
-import NavBar from "./Components/NavBar/index"
-import DropDownMenu from "./Components/DropdownMenu/DropMenuContainer"
-import Offers from "./Components/Offers"
-import Services from "./Components/Services"
-import Presales from "./Components/PreComands"
+import PageContent from "../../UniversalComponents/Content_Card"
+import Header from "../../UniversalComponents/Header"
 import { PresaleProducts } from "../../Database/DummyDatabase"
 import { ReduceProducts } from "../../Database/DummyDatabase"
-import ReducedProducts from "./Components/ReducedProducts"
-import Comics from "./Components/Comics"
 import { ComicMagazines } from "../../Database/DummyDatabase"
+import DummyContainer from "./Components/DummyComponent/DummyNavbar"
+import DummyPrompter from "./Components/DummyComponent/DummyPrompter"
+import DummyOffers from "./Components/DummyComponent/DummyOffers"
+import "./Home.css"
+import DummyServices from "./Components/DummyComponent/DummyServices"
+import DummyPresales from "./Components/DummyComponent/DummyPresales"
+import DummyReduced from "./Components/DummyComponent/DummyReduced"
+import DummyComics from "./Components/DummyComponent/DummyCommics"
 
 export default function HomePage () {
     return (
         <>  
             <Header></Header>
-            <Content_Container>
-                <Comics items = {ComicMagazines}></Comics>
-                <ReducedProducts items={ReduceProducts}></ReducedProducts>
-                <Presales items={PresaleProducts}></Presales>
-                <Services></Services>
-                <Prompter></Prompter>
-                <Offers></Offers>
-                <NavBar></NavBar>
-            </Content_Container>
-                    
+            <PageContent>
+                <DummyContainer></DummyContainer>
+                <DummyPrompter></DummyPrompter>
+                <DummyOffers></DummyOffers>
+                <DummyServices></DummyServices>
+                <DummyPresales items={PresaleProducts}></DummyPresales>
+                <DummyReduced items={ReduceProducts}></DummyReduced>
+                <DummyComics items = {ComicMagazines}></DummyComics>
+            </PageContent>
+       
+        
         </>
     )
 }

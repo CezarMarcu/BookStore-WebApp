@@ -8,6 +8,11 @@ const img7 = require("./Resources/Magazine.png");
 const img9 = require("./Resources/Movies.png");
 const img10 = require("./Resources/Podcast.png");
 const img11 = require("./Resources/Papetery.png");
+const img12 = require("./Resources/Toys.png");
+const img13 = require("./Resources/Games.png");
+const img14 = require("./Resources/Apple.png");
+const img15 = require("./Resources/Cartoons.png");
+const img16 = require("./Resources/Gourmet.png");
 const product1 = require("./Resources/product1.jpg");
 const product2 = require("./Resources/product2.jpg");
 const product3 = require("./Resources/product3.jpg")
@@ -18,31 +23,29 @@ const product7 = require("./Resources/product7.jpg")
 const product8 = require("./Resources/product8.jpg")
 const product9 = require("./Resources/product9.jpg");
 const product10 = require("./Resources/product10.jpg");
-const product11 = require("./Resources/product11.jpg")
-const product12 = require("./Resources/product12.jpg")
-
-
+const product11 = require("./Resources/product11.jpg");
+const product12 = require("./Resources/product12.jpg");
 
 
 export const PresaleProducts = [
-    {name: "Mantuitorul Dunei",author:"Frank Herbert", price:"64.00lei", img:product1},
-    {name: "Cruciada Masinilor", author:"Frank Herbert", price:"64.00lei", img:product2},
-    {name:"Jihadul Budlerian", author:"Frank Herbert", price:"64.00lei", img:product3},
-    {name: "Batalia Corinului",author:"Frank Herbert", price:"64.00lei", img:product4}
+    {name: "Mantuitorul Dunei",author:"Frank Herbert", price:"64.00. lei", img:product1, status: 'PRECOMANDA'},
+    {name: "Cruciada Masinilor", author:"Frank Herbert", price:"64.00. lei", img:product2, status: 'PRECOMANDA'},
+    {name:"Jihadul Budlerian", author:"Frank Herbert", price:"64.00. lei", img:product3, status: 'PRECOMANDA'},
+    {name: "Batalia Corinului",author:"Frank Herbert", price:"64.00. lei", img:product4, status: 'PRECOMANDA'}
 ]
 
 export const ReduceProducts = [
-    {name: "Urzeala Tronurilor",author:"George R.R. Martin", price:"64.00lei", img:product5},
-    {name: "Inclestarea Regilor", author:"George R.R. Martin", price:"64.00lei", img:product6},
-    {name:"Iuresul Sabiilor", author:"George R.R. Martin", price:"64.00lei", img:product7},
-    {name: "Festinul Ciorilor",author:"George R.R. Martin", price:"64.00lei", img:product8}
+    {name: "Urzeala Tronurilor",author:"George R.R. Martin", price:"64.00. lei", img:product5,status: 'IN STOC'},
+    {name: "Inclestarea Regilor", author:"George R.R. Martin", price:"64.00. lei", img:product6,status: 'IN STOC'},
+    {name:"Iuresul Sabiilor", author:"George R.R. Martin", price:"64.00. lei", img:product7,status: 'IN STOC'},
+    {name: "Festinul Ciorilor",author:"George R.R. Martin", price:"64.00. lei", img:product8,status: 'IN STOC'}
 ]
 
 export const ComicMagazines = [
-    {name: "Injustice Gods Among Us",author:"George R.R. Martin", price:"64.00lei", img:product9},
-    {name: "Deadpool the greatest hero", author:"George R.R. Martin", price:"64.00lei", img:product10},
-    {name:"Deadpool and Cable", author:"George R.R. Martin", price:"64.00lei", img:product11},
-    {name: "Deadpool",author:"George R.R. Martin", price:"64.00lei", img:product12}
+    {name: "Injustice Gods Among Us",author:"George R.R. Martin", price:"64.00. lei", img:product9,status: 'IN STOC'},
+    {name: "Deadpool the greatest hero", author:"George R.R. Martin", price:"64.00. lei", img:product10,status: 'IN STOC'},
+    {name:"Deadpool and Cable", author:"George R.R. Martin", price:"64.00. lei", img:product11,status: 'IN STOC'},
+    {name: "Deadpool",author:"George R.R. Martin", price:"64.00. lei", img:product12,status: 'IN STOC'}
 ]
 
 export const ProductCategories = [
@@ -96,10 +99,10 @@ export const CategoriesData = [
     {name:"FILME", source:img9},
     {name:"PODCASTURI", source:img10},
     {name:"PAPETARIE", source:img11},
-    {name:"JUCARII", source:img11},
-    {name:"JOCURI", source:img11},
-    {name:"APPLE", source:img11},
-    {name:"DESENE", source:img11},
-    {name:"GOURMET", source:img11},
+    {name:"JUCARII", source:img12},
+    {name:"JOCURI", source:img13},
+    {name:"APPLE", source:img14},
+    {name:"DESENE", source:img15},
+    {name:"GOURMET", source:img16},
 
 ]
