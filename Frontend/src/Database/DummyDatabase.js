@@ -109,8 +109,8 @@ export const CategoriesData = [
 ]
 
 export const TopSalesData = [
-    {name: "Mantuitorul Dunei",img:product1},
-    {name: "Iuresul Sabiilor",img:product7},
-    {name: "Deadpool the greatest hero", img:product11},
-    {name: "Red Dead Redemption 2", img:product13},
+    {name: "Mantuitorul Dunei", img:product1, position:"1"},
+    {name: "Iuresul Sabiilor", img:product7, position:"2"},
+    {name: "Deadpool the greatest hero", img:product11, position:"3"},
+    {name: "Red Dead Redemption 2", img:product13, position:"4"},
 ]

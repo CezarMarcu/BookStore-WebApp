@@ -12,6 +12,7 @@ export const Title = styled.p`
     position:relative;
     font-family: 'Roboto Slab';
     font-size:25px;
+    color:rgb(127,127,127)
 `
 export const ProductsContainer = styled.div`
     

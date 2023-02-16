@@ -16,6 +16,7 @@ export const Title = styled.p`
     margin-right:7rem;
     right:-62rem;
     margin-top:20%;
+    color:rgb(127,127,127)
 `
 export const ProductsContainer = styled.div`
     position:relative;

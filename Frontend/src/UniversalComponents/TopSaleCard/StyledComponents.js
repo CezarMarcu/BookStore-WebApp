@@ -9,11 +9,9 @@ export const Container = styled.div`
     background:white;
     border-radius:0.5rem;
     transition: transform .4s;
-    &: hover {
-        transform: scale(1.3);
-        z-index:1;
-} 
 `
+export const Galerry = styled.div``
+
 export const ProductImageContainer = styled.div`
     height:18rem;
     width:11.5rem;
@@ -40,15 +38,20 @@ export const Title = styled.p`
     position:relative;
     font-family: 'Roboto Slab';
     font-weight:900;
-    top:-0.5rem;
+    top:-2.5rem;
 `
-export const Author = styled.p`
-    color:red;
-    font-family: 'Source Code Pro';
-    font-size:14px;
-    font-weight:200;
-    position:relative;
-    top:-1rem;
+export const Position = styled.span`
+  position:relative;
+  top:-3rem;
+  left:-1rem;
+  background:rgb(52,169,110);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+    font: 22px Roboto slab, sans-serif;
 `
-
 

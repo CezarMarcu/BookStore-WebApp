@@ -10,7 +10,7 @@ const TopSales  = (props) => {
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>
-                    <TopSaleCard key={index} title={item.name} img = {item.img}></TopSaleCard>
+                    <TopSaleCard key={index} title={item.name} img = {item.img} position = {item.position}></TopSaleCard>
                     )
                 }
             </ProductsContainer>

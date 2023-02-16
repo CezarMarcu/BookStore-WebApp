@@ -16,6 +16,7 @@ export const Title = styled.p`
     margin-left:7.5rem;
     left:-4rem;
     margin-top:20%;
+    color:rgb(127,127,127)
 `
 export const ProductsContainer = styled.div`
     display:flex;

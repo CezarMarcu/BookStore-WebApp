@@ -1,6 +1,6 @@
 import { Container,ProductImage,Title} from "./StyledComponents"
 import { ProductImageContainer,ProductDetailsContainer } from "./StyledComponents"
-
+import { Position } from "./StyledComponents"
 
 const TopSaleCard  = (props) => {
     return(
@@ -8,7 +8,7 @@ const TopSaleCard  = (props) => {
             <ProductImageContainer>
                 <ProductImage src={props.img}></ProductImage>
             </ProductImageContainer>
-
+            <Position>{props.position}</Position>
             <ProductDetailsContainer>
                 <Title>{props.title}</Title>
             </ProductDetailsContainer>
