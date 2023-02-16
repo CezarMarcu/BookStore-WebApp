@@ -6,6 +6,7 @@ import Header from "../../UniversalComponents/Header"
 import { PresaleProducts } from "../../Database/DummyDatabase"
 import { ReduceProducts } from "../../Database/DummyDatabase"
 import { ComicMagazines } from "../../Database/DummyDatabase"
+import { TopSalesData } from "../../Database/DummyDatabase"
 
 import Navbar from "./Components/Section-NAVBAR"
 import Prompter from "./Components/Section-PROMPTER"
@@ -14,6 +15,7 @@ import Services from "./Components/Section-SERVICES"
 import Presales from "./Components/Section-PRESALES"
 import Reduced from "./Components/Section-REDUCED"
 import Comics from "./Components/Section-COMICS"
+import TopSales from "./Components/Section-TOP_SALES"
 
 
 export default function HomePage () {
@@ -28,6 +30,7 @@ export default function HomePage () {
                 <Presales items={PresaleProducts}></Presales>
                 <Reduced items={ReduceProducts}></Reduced>
                 <Comics items = {ComicMagazines}></Comics>
+                <TopSales items = {TopSalesData}></TopSales>
             </PageContent>
        
         

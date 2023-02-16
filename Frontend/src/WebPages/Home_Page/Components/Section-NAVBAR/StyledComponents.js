@@ -74,5 +74,6 @@ export const ProductsButton = styled.button`
     100% {
         opacity: 1;
     }
-
 `
+
+export const SearchContainer = styled.div``

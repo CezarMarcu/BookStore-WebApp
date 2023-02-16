@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     margin-top:3rem;
-    height:28rem;
+    height:28%;
     width:19rem;
     display:flex;
     flex-direction:column;
@@ -97,7 +97,6 @@ export const Tag = styled.div`
     left:-1.9rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
 `
-
 export const DeliveryTag=styled.p`
     font-size:18px;
     position:relative;
