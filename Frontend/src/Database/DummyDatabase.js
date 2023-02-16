@@ -26,6 +26,8 @@ const product10 = require("./Resources/product10.jpg");
 const product11 = require("./Resources/product11.jpg");
 const product12 = require("./Resources/product12.jpg");
 const product13 = require("./Resources/product13.jpg")
+export const articleImage = require("./Resources/AI.png")
+
 
 
 export const PresaleProducts = [
@@ -113,4 +115,7 @@ export const TopSalesData = [
     {name: "Iuresul Sabiilor", img:product7, position:"2"},
     {name: "Deadpool the greatest hero", img:product11, position:"3"},
     {name: "Red Dead Redemption 2", img:product13, position:"4"},
+]
+export const Articles = [
+    {title:"Bla", description:"bla"},
 ]

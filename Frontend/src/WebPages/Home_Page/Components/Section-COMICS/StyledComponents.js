@@ -5,7 +5,6 @@ export const Container = styled.div`
     width:100%;
     background:rgb(245,245,245);
     display:flex;
-    flex-direction: row;
 `
 export const Title = styled.p`
     position:relative;

@@ -15,7 +15,6 @@ export const Title = styled.p`
     color:rgb(127,127,127)
 `
 export const ProductsContainer = styled.div`
-    
     position:relative;
     display:flex;
     flex-direction:row;

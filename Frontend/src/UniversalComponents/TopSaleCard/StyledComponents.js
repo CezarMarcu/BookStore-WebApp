@@ -9,6 +9,7 @@ export const Container = styled.div`
     background:white;
     border-radius:0.5rem;
     transition: transform .4s;
+    }
 `
 export const Galerry = styled.div``
 
