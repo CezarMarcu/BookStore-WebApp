@@ -17,6 +17,7 @@ import Reduced from "./Components/Section-REDUCED"
 import Comics from "./Components/Section-COMICS"
 import TopSales from "./Components/Section-TOP_SALES"
 import Articles from "./Components/Section-ARTICLES"
+import Footer from "./Components/Section-FOOTER"
 
 export default function HomePage () {
     return (
@@ -33,6 +34,7 @@ export default function HomePage () {
                 <TopSales items = {TopSalesData}></TopSales>
                 <Articles></Articles> 
             </PageContent>
+            <Footer></Footer>
        
         
         </>

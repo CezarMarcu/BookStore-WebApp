@@ -3,4 +3,6 @@
     width: auto;
     height: 30rem;
     position: absolute;
+    display: flex;
+    flex-direction: column;
 }
