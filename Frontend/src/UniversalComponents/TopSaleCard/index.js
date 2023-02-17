@@ -1,17 +1,11 @@
-import { Container,ProductImage,Title} from "./StyledComponents"
-import { ProductImageContainer,ProductDetailsContainer } from "./StyledComponents"
-import { Position } from "./StyledComponents"
+import { Container,ProductImage,Title, Position} from "./StyledComponents"
 
 const TopSaleCard  = (props) => {
     return(
         <Container>
-            <ProductImageContainer>
-                <ProductImage src={props.img}></ProductImage>
-            </ProductImageContainer>
+            <ProductImage src={props.img}></ProductImage>
+            <Title>{props.title}</Title>
             <Position>{props.position}</Position>
-            <ProductDetailsContainer>
-                <Title>{props.title}</Title>
-            </ProductDetailsContainer>
         </Container>
     )
 }
