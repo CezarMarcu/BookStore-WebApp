@@ -36,19 +36,6 @@ export const Title = styled.p`
     display:flex;
     margin-left:20px;
 `
-export const Link = styled.a`
-    display:flex;
-    height:2.5rem;
-    width:18rem;
-    font-family:'Roboto Slab';
-    font-weight:300;
-    margin-left:30px;
-    font-size:16px;
-    border-bottom:1px solid rgb(200,200,200);
-    :hover{
-        color:green;
-    }
-`
 export const LFRContainer = styled.div`
     height:25rem;
     width:25rem;
@@ -128,7 +115,6 @@ export const SecuredShoppingContainer = styled.div`
     padding-left:20rem;
     padding-top:7rem;
 `
-
 export const InputValue = styled.p`
     display:flex;
     font-family:'Roboto Slab';
@@ -172,7 +158,6 @@ export const Input = styled.div`
         border-bottom:2px solid rgb(37,199,58);
     }
 `
-
 export const Subscribe = styled.button`
     height:3rem;
     width:10rem;
@@ -190,7 +175,6 @@ export const Subtitle = styled.p`
     display:flex;
     margin-left:20px;
 `
-
 export const AsistenceContainer = styled.div`
     width:20rem;
     height:auto;

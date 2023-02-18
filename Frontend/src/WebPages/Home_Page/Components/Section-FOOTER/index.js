@@ -1,8 +1,9 @@
+import LinkComponent from "../../../../UniversalComponents/Link"
 import { useState } from "react"
 import { Container,
     Content,
     LinksContainer,
-    Title,Link, 
+    Title, 
     LFRContainer,
     NewsLetterContainer,
     FacebookIcon,
@@ -21,7 +22,8 @@ import { Container,
     CardIcon,
     ShieldIcon,
     PaymentOptionContainer,
-    SecuredShoppingContainer} from "./StyledComponents"
+    SecuredShoppingContainer,
+    } from "./StyledComponents"
 
 const Footer = () => {
     const [isClicked, setClick] = useState(false)
@@ -33,14 +35,14 @@ const Footer = () => {
             <Content>
                 <LinksContainer>
                     <Title>Linkuri utile</Title>
-                    <Link>DESPRE LIVADA CU CARTI.RO</Link>
-                    <Link>DESPRE LIVADA CU CARTI</Link>
-                    <Link>JOBURI</Link>
-                    <Link>ASISTENTA</Link>
-                    <Link>LIVRARE IN LIBRARIE</Link>
-                    <Link>COSTURI DE TRANSPORT</Link>
-                    <Link>POLITICA DE CONFIDENTIALITATE</Link>
-                    <Link>POLITICA DE RETUR</Link>
+                    <LinkComponent title="DESPRE LIVADA CU CARTI.RO"></LinkComponent>
+                    <LinkComponent title="DESPRE LIVADA CU CARTI"></LinkComponent>
+                    <LinkComponent title="JOBURI"></LinkComponent>
+                    <LinkComponent title="ASISTENTA"></LinkComponent>
+                    <LinkComponent title="LIVRARE IN LIBRARIE"></LinkComponent>
+                    <LinkComponent title="COSTURI DE TRANSPORT"></LinkComponent>
+                    <LinkComponent title="POLITICA DE RETUR"></LinkComponent>
+                    <LinkComponent title="POLITICA DE CONFIDENTIALITATE"></LinkComponent>
                 </LinksContainer>
                 
                 <LFRContainer>
