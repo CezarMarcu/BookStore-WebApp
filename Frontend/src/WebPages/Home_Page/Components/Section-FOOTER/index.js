@@ -28,21 +28,21 @@ import { Container,
 const Footer = () => {
     const [isClicked, setClick] = useState(false)
     const onClickHandler = () => isClicked===true ? setClick(false) : setClick(true);
-
+    const Links = ["DESPRE LIVADA CU CARTI.RO",
+        "DESPRE LIVADA CU CARTI",
+        "JOBURI",
+        "ASISTENTA",
+        "LIVRARE IN LIBRARIE",
+        "COSTURI DE TRANSPORT",
+        "POLITICA DE RETUR",
+        "POLITICA DE CONFIDENTIALITATE"]
     return(
         <Container>
             
             <Content>
                 <LinksContainer>
                     <Title>Linkuri utile</Title>
-                    <LinkComponent title="DESPRE LIVADA CU CARTI.RO"></LinkComponent>
-                    <LinkComponent title="DESPRE LIVADA CU CARTI"></LinkComponent>
-                    <LinkComponent title="JOBURI"></LinkComponent>
-                    <LinkComponent title="ASISTENTA"></LinkComponent>
-                    <LinkComponent title="LIVRARE IN LIBRARIE"></LinkComponent>
-                    <LinkComponent title="COSTURI DE TRANSPORT"></LinkComponent>
-                    <LinkComponent title="POLITICA DE RETUR"></LinkComponent>
-                    <LinkComponent title="POLITICA DE CONFIDENTIALITATE"></LinkComponent>
+                    {Links.map((element,index) => <LinkComponent key={index} title={element}></LinkComponent>)}
                 </LinksContainer>
                 
                 <LFRContainer>
