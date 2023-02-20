@@ -2,6 +2,7 @@ import logo from './Resources/Logo.png'
 import {Container,Logo, NavButton,ProductsButton} from './StyledComponents'
 import DropDownMenu from '../Section-DROP_DOWN_MENU/DropMenuContainer'
 import { useState } from 'react'
+import CollapseMenu from '../../../../UniversalComponents/CollapseMenu'
 
 
 
@@ -10,11 +11,12 @@ const Navbar = () =>{
     const onClick = () => showDropDown===true ? setShowDropDown(false) : setShowDropDown(true);
     return(
             <Container>
-                {showDropDown ? <DropDownMenu/> : null}
+                <CollapseMenu></CollapseMenu>
+                {/* {showDropDown ? <DropDownMenu/> : null}
                 <ProductsButton onClick={onClick}>PRODUSE</ProductsButton>
                 <NavButton>DETALII</NavButton>
                 <NavButton>LOGIN</NavButton>
-                <Logo src={logo}></Logo>
+                <Logo src={logo}></Logo> */}
             </Container>
     )
 }

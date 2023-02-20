@@ -166,7 +166,11 @@ export const Subscribe = styled.button`
     float:right;
     font-family:'Roboto Slab';
     font-weight:900;
-    font-size:16px;
+    font-size:16px;4;
+    border:0;
+    transition:0.5s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+    :hover{transform:scale(1.2)}
 `
 export const Subtitle = styled.p`
     font-size:19px;
