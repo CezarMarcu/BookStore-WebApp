@@ -7,7 +7,55 @@
     <title>Books</title>
 </head>
 <body>
+
 <div class="col-8 mx-auto">
+
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            + Add new book
+        </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <form th:object="${book}" method="post">
+
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titlu</label>
+                    <input type="text" class="form-control" id="title" th:field="*{title}"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="author" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="author" th:field="*{author}"/>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="edit" class="form-label">Editura</label>
+                    <input type="text" class="form-control" id="edit" th:field="*{edit}"/>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="dop" class="form-label">Data publicare</label>
+                    <input type="date" class="form-control" id="dop" th:field="*{dateOfPublication}"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Pret</label>
+                    <input type="number" class="form-control" id="price" th:field="*{price}"/>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
     <table class="table caption-top">
         <thead>
             <tr>
@@ -32,37 +80,7 @@
     </table>
 
 
-        <form th:object="${book}" method="post">
 
-            <div class="mb-3">
-                <label for="title" class="form-label">Titlu</label>
-                <input type="text" class="form-control" id="title" th:field="*{title}"/>
-            </div>
-
-            <div class="mb-3">
-                <label for="author" class="form-label">Autor</label>
-                <input type="text" class="form-control" id="author" th:field="*{author}"/>
-            </div>
-
-
-            <div class="mb-3">
-                <label for="edit" class="form-label">Editura</label>
-                <input type="text" class="form-control" id="edit" th:field="*{edit}"/>
-            </div>
-
-
-            <div class="mb-3">
-                <label for="dop" class="form-label">Data publicare</label>
-                <input type="date" class="form-control" id="dop" th:field="*{dateOfPublication}"/>
-            </div>
-
-            <div class="mb-3">
-                <label for="price" class="form-label">Pret</label>
-                <input type="number" class="form-control" id="price" th:field="*{price}"/>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Add Book</button>
-        </form>
 
 
 </div>
