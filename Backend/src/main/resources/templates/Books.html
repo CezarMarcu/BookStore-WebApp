@@ -8,57 +8,14 @@
 </head>
 <body>
 
-<div class="col-8 mx-auto">
+<div class="col-8 mx-auto mt-5">
 
-    <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            + Add new book
-        </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            <form th:object="${book}" method="post">
-
-                <div class="mb-3">
-                    <label for="title" class="form-label">Titlu</label>
-                    <input type="text" class="form-control" id="title" th:field="*{title}"/>
-                </div>
-
-                <div class="mb-3">
-                    <label for="author" class="form-label">Autor</label>
-                    <input type="text" class="form-control" id="author" th:field="*{author}"/>
-                </div>
-
-
-                <div class="mb-3">
-                    <label for="edit" class="form-label">Editura</label>
-                    <input type="text" class="form-control" id="edit" th:field="*{edit}"/>
-                </div>
-
-
-                <div class="mb-3">
-                    <label for="dop" class="form-label">Data publicare</label>
-                    <input type="date" class="form-control" id="dop" th:field="*{dateOfPublication}"/>
-                </div>
-
-                <div class="mb-3">
-                    <label for="price" class="form-label">Pret</label>
-                    <input type="number" class="form-control" id="price" th:field="*{price}"/>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Add Book</button>
-            </form>
-        </div>
-    </div>
-
-
-
-
-
-
-    <table class="table caption-top">
-        <thead>
+    <h3>Books</h3>
+    <form method="post">
+        <table class="table table-bordered table-sm">
+            <thead>
             <tr>
+                <th scope="col">Select</th>
                 <th scope="col">id</th>
                 <th scope="col">Titlu</th>
                 <th scope="col">Autor</th>
@@ -66,9 +23,10 @@
                 <th scope="col">Publicare</th>
                 <th scope="col">Pret</th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <tr th:each="book:${books}">
+                <td><input class="form-check-input" type="checkbox" name="selections" th:value="*{book.id}"/></td>
                 <th scope="row" th:text="${book.Id}"></th>
                 <td th:text="${book.Title}"></td>
                 <td th:text="${book.Author}"></td>
@@ -76,14 +34,65 @@
                 <td th:text="${{book.dateOfPublication}}"></td>
                 <td th:text="${{book.price}}"></td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+        <button type="submit" name = "delete" value="true" class="btn btn-outline-danger mt-4">Delete records</button>
+        <button type="submit" name = "edit" value="true" class="btn btn-outline-info mt-4">Edit records</button>
+    </form>
+
+
+
+    <div class="card card-body">
+        <h3>Book form</h3>
+        <form th:object="${book}" method="post">
+            <div class="mb-3">
+                <label for="title" class="form-label">Titlu</label>
+                <input type="text" class="form-control" id="title" th:field="*{title}" th:errorclass="is-invalid"/>
+                <div id="validationTitle" class="invalid-feedback" th:errors ="*{title}">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="author" th:field="*{author}" th:errorclass="is-invalid"/>
+                <div id="validationAuthor" class="invalid-feedback" th:errors ="*{author}">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="edit" class="form-label">Editura</label>
+                <input type="text" class="form-control" id="edit" th:field="*{edit}" th:errorclass="is-invalid"/>
+                <div id="validationEdit" class="invalid-feedback" th:errors ="*{edit}">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="dop" class="form-label">Data publicare</label>
+                <input type="date" class="form-control" id="dop" th:field="*{dateOfPublication}" th:errorclass="is-invalid"/>
+                <div id="validationDOP" class="invalid-feedback" th:errors ="*{dateOfPublication}">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Pret</label>
+                <input type="number" class="form-control" id="price" th:field="*{price}" th:errorclass="is-invalid"/>
+                <div id="validationPrice" class="invalid-feedback" th:errors ="*{price}">
+                    Looks good!
+                </div>
+            </div>
+            <input type="hidden" th:field="*{id}"/>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
 
 
 
 
 
-</div>
+
+
+
+    </div>
 
 
 

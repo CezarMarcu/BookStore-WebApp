@@ -2,12 +2,14 @@ package com.example.Backend.booksDBweb.web.controller;
 
 import com.example.Backend.booksDBweb.biz.models.Book;
 import com.example.Backend.booksDBweb.data.BookRepository;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 
 @Controller
@@ -37,9 +39,28 @@ public class BooksController {
     }
 
     @PostMapping
-    public String saveBook(Book book){
-        bookRepository.save(book);
-        System.out.println(book);
+    public String saveBook(@Valid Book book, Errors errors){
+        if(!(errors.hasErrors())){
+            bookRepository.save(book);
+            return "redirect:books";
+        }
+        return "books";
+    }
+
+    @PostMapping(params = "delete=true")
+    public String deleteBooks(@RequestParam Optional<List<Long>> selections){
+        if (selections.isPresent()) {
+            bookRepository.deleteAllById(selections.get());
+        }
         return "redirect:books";
+    }
+
+    @PostMapping(params = "edit=true")
+    public String updateBooks(@RequestParam Optional<List<Long>> selections, Model model){
+        if (selections.isPresent()) {
+            Optional<Book> book = bookRepository.findById(selections.get().get(0));
+            model.addAttribute("book", book);
+        }
+        return "books";
     }
 }
