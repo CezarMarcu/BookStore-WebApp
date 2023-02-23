@@ -8,11 +8,11 @@ import {CreditCard2BackFill} from '@styled-icons/bootstrap/CreditCard2BackFill'
 import {ShieldFillCheck} from '@styled-icons/bootstrap/ShieldFillCheck'
 
 export const Container = styled.div`
-    width:100%;
     position:relative;
+    width:100%;
     height:auto;
     background:rgb(229,232,235);
-    top:258.58rem;
+    top:239rem;
 `
 export const Content = styled.div`
     position:relative;

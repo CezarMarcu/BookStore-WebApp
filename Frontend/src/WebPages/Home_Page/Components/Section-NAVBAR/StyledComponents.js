@@ -8,7 +8,7 @@ export const Container = styled.div`
     height: 3rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index:1; 
+    z-index:2; 
 `
 export const NavButton = styled.button`
     width:8rem;
@@ -38,14 +38,14 @@ export const NavButton = styled.button`
 export const Logo = styled.img`
     position: fixed;
     transition: transform .8s;
-    top: 0;
+    top:0rem;
+    left:55rem;
     animation: fadeIn 6s;
     height: 5rem;
     z-index:1;
     width: 5rem;
-    &: hover{
-        transform: scale(-1, 1);
-    }
+    object-fit: contain;
+    transition:0.5s;
     @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -67,7 +67,18 @@ export const ProductsButton = styled.button`
     animation: fadeIn 2s;
     &:hover {
         background-color:rgb(240, 240, 240);
-  }
+        ${Logo}{
+            transform:scale(0.5);
+            top:-1rem;
+        }
+    }
+
+    :focus{
+         ${Logo}{
+            transform:scale(0.5);
+            top:-1rem;
+        }
+    }
     @keyframes fadeIn {
     0% {
         opacity: 0;

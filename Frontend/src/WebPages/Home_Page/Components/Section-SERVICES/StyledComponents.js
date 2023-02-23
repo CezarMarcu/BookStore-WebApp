@@ -3,12 +3,13 @@ import styled from "styled-components"
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    width:100%;
+    width:auto;
     height:15rem;
+    margin:0 auto;
+    gap:4rem;
     animation: slideRight 5s;
     background:transparent;
     top:45.3rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); 
     @keyframes slideRight{
     0% {
             opacity: 0;

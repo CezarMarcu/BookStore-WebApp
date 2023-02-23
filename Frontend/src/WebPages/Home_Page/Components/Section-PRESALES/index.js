@@ -1,10 +1,12 @@
-import { Container,Title,ProductsContainer } from "./StyledComponents"
+import { Container,Title,ProductsContainer,TitleContainer } from "./StyledComponents"
 import ProductCard from "../../../../UniversalComponents/ProductCard"
 
 const Presales  = (props) => {
     return(
         <Container>
-            <Title>PRECOMENZI</Title>
+            <TitleContainer>
+                <Title>PRECOMENZI</Title>
+            </TitleContainer>
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>

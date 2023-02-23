@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-top:3rem;
-    height:28%;
-    width:19rem;
+    height:29rem;
+    width:14rem;
     display:flex;
     flex-direction:column;
     background:white;
@@ -13,7 +12,10 @@ export const Container = styled.div`
     &: hover {
         transform: scale(1.3);
         z-index:1;
-} 
+    }
+    @media screen and (max-width: 1499px){
+        transform: scale(0.8);
+    } 
 `
 export const ProductImageContainer = styled.div`
     height:18rem;
@@ -44,6 +46,7 @@ export const ProductPriceTagContainer = styled.div`
 export const ProductImage = styled.img`
     height:18rem;
     width:11.5rem;
+    object-fit:contain;
 `
 export const Title = styled.p`
     font-size:16px;

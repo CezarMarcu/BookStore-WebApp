@@ -4,7 +4,7 @@ export const Container = styled.div`
     display:flex;
     flex-direction: row;
     width:100%;
-    height:12.5rem;
+    height:auto;
     animation: slideLeft 1.5s;
     background:transparent;
     @keyframes slideLeft{
@@ -20,6 +20,7 @@ export const Offer = styled.div`
     height:100%;
     background:transparent;
     margin-left:5px;
+    object-fit:contain;
     transition: transform .8s;
     &: hover {
         transform: scale(1.5);

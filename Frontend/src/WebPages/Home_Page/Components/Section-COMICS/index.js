@@ -1,10 +1,12 @@
-import { Container,Title,ProductsContainer } from "./StyledComponents"
+import { Container,Title,ProductsContainer,TitleContainer } from "./StyledComponents"
 import ProductCard from "../../../../UniversalComponents/ProductCard"
 
 const Comics  = (props) => {
     return(
         <Container>
-            <Title>COMICS, ALL YOU CAN READ</Title>
+            <TitleContainer>
+                <Title>COMICS, ALL YOU CAN READ</Title>
+            </TitleContainer>
             <ProductsContainer>
                 {
                     props.items.map((item, index)=>
