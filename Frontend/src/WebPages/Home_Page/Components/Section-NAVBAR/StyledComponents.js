@@ -4,7 +4,7 @@ import DropDownMenu from "../Section-DROP_DOWN_MENU/DropMenuContainer";
 export const Container = styled.div`
     overflow: hidden;
     position: fixed;
-    width: 65%;
+    width: 75%;
     height: 3rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
