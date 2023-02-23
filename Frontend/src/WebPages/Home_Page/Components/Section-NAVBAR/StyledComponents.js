@@ -12,7 +12,6 @@ export const Container = styled.div`
 export const NavButton = styled.button`
     width:8rem;
     height: 100%;
-    left:30.5rem;
     float:right;
     background-color: white;
     border-style: none;
@@ -41,7 +40,7 @@ export const Logo = styled.img`
     left:46rem;
     animation: fadeIn 6s;
     height: 5rem;
-    z-index:1;
+    z-index:2;
     width: 5rem;
     object-fit: contain;
     transition:0.5s;
@@ -86,5 +85,3 @@ export const ProductsButton = styled.button`
         opacity: 1;
     }
 `
-
-export const SearchContainer = styled.div``
