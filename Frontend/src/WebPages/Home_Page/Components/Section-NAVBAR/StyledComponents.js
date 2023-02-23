@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import DropDownMenu from "../Section-DROP_DOWN_MENU/DropMenuContainer";
 
 export const Container = styled.div`
     overflow: hidden;
     position: fixed;
-    width: 75%;
+    width: 65%;
     height: 3rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -39,7 +38,7 @@ export const Logo = styled.img`
     position: fixed;
     transition: transform .8s;
     top:0rem;
-    left:55rem;
+    left:46rem;
     animation: fadeIn 6s;
     height: 5rem;
     z-index:1;

@@ -1,9 +1,11 @@
 .contentContainer {
+    position:relative;
     background-color: white;
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 65%;
     height: auto;
-    left: 12%;
+    margin-left: 13.5%;
+    justify-items: center;;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);}

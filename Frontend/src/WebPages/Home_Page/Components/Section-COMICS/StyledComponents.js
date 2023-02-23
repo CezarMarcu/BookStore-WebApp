@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const TitleContainer = styled.div`
 position:relative;
 height:auto;
-width:15rem;
+width:11rem;
 background:transparent;
  @media screen and (max-width: 1499px) {
     margin-bottom:1rem;
@@ -25,7 +25,7 @@ export const Title = styled.p`
     font-family: 'Roboto Slab';
     font-size:25px;
     color:rgb(127,127,127);
-    top:13rem;
+    top:10rem;
     left:1rem;
     @media screen and (max-width: 1499px) {
         top:0rem;

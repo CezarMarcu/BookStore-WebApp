@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height:29rem;
-    width:14rem;
+    height:26rem;
+    width:13rem;
     display:flex;
     flex-direction:column;
     background:white;
@@ -27,25 +27,23 @@ export const ProductImageContainer = styled.div`
     padding: 3px;
 `
 export const ProductDetailsContainer = styled.div`
+    position:relative;
     height:3.5rem;
     width:11.5rem;
     background:transparent;
-    display: inline-block;
     margin: 0 auto;
-    padding: 3px;
+    top:-1rem;
 `
 export const ProductPriceTagContainer = styled.div`
     height:2.5rem;
     width:11.5rem;
     background:transparent;
-    display: inline-block;
     margin: 0 auto;
-    margin-top:2.5rem;
-    padding: 3px;
+    margin-top:1rem;
 `
 export const ProductImage = styled.img`
-    height:18rem;
-    width:11.5rem;
+    height:17rem;
+    width:10.5rem;
     object-fit:contain;
 `
 export const Title = styled.p`
@@ -97,14 +95,14 @@ export const Tag = styled.div`
     font-weight:600;
     position:relative;
     top:-4rem;
-    left:-1.9rem;
+    left:-1.4rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
 `
 export const DeliveryTag=styled.p`
     font-size:18px;
     position:relative;
     top:-6.6rem;
-    left:2rem;
+    left:2.5rem;
     font-family: 'Arial';
     font-weight:900;
     font-style: oblique;
