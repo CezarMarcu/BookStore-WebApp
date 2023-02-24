@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductDetailsContainer = styled.div`
     height:3.5rem;
     width:11.5rem;
-    background:transparent;
+    background:red;
     display: inline-block;
     margin: 0 auto;
     padding: 3px;
@@ -32,15 +32,16 @@ export const Position = styled.span`
     font: 22px Roboto slab, sans-serif;
 `
 export const ProductImage = styled.img`
-    height:18rem;
+    position:relative;
+    height:28rem;
     width:11.5rem;
-    margin:0 auto;
     transition:0.5s;
+    margin:0 auto;
 `
 
 export const Container = styled.div`
     margin-top:3rem;
-    height:28%;
+    height:auto;
     width:19rem;
     display:flex;
     flex-direction:column;

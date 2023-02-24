@@ -12,18 +12,19 @@ export const Title = styled.p`
     position:relative;
     font-family: 'Roboto Slab';
     font-size:25px;
+    top:2rem;
     color:rgb(127,127,127)
 `
 export const ProductsContainer = styled.div`
     position:relative;
     display:flex;
     flex-direction:row;
-    height:100%;
+    height:27rem;
     width:75%;
     background:transparent;
     margin: 0 auto;
-    gap:30px;
-    top:-2rem;
+    gap:10px;
+    top:-1rem;
     margin-bottom:5rem;
 `
 export const CategoriesContainer = styled.div`

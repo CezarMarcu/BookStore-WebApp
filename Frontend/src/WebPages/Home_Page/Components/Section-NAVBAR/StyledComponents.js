@@ -58,7 +58,7 @@ export const ProductsButton = styled.button`
     float:left;
     background-color:transparent;
     border-style: none;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto slab';
     font-weight:900;
     font-size:16px;
     color:black;

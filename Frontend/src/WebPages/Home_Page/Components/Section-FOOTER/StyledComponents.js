@@ -12,7 +12,7 @@ export const Container = styled.div`
     width:100%;
     height:auto;
     background:rgb(229,232,235);
-    top:239rem;
+    top:228rem;
 `
 export const Content = styled.div`
     position:relative;
