@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    overflow: hidden;
     position: fixed;
     width: 65%;
     height: 3rem;
@@ -12,6 +11,8 @@ export const Container = styled.div`
 export const NavButton = styled.button`  
     width:8rem;
     height: 100%;
+    position:relative;
+    top:-3rem;
     float:right;
     background-color: white;
     border-style: none;
