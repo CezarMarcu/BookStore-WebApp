@@ -5,7 +5,7 @@ export const InputValue = styled.p`
     font-family:'Roboto Slab';
     font-weight:900;
     font-size:16px;
-    margin-top:1rem;
+    margin-top:0.8rem;
     margin-left:1rem;
     transition:0.5s;
 `

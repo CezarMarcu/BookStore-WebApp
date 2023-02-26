@@ -8,9 +8,11 @@ export const Container = styled.div`
     background:rgb(245,245,245);
     display:flex;
     flex-direction: row;
+    transition:0.5s;
     @media screen and (max-width: 1499px) {
         flex-direction:column;
-`
+    }
+    `
 export const TitleContainer = styled.div`
 position:relative;
 height:auto;

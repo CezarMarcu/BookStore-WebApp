@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    width:100%;
-    height:8rem;
-    background:transparent;
-    position:relative;
-    margin-bottom:5px;
-    border-bottom: 2px solid rgb(230,230,230);
-`
 export const Picture = styled.img`
     width:7rem;
     height:7rem;
@@ -25,15 +17,37 @@ export const Details = styled.div`
     top:-7rem;
 `
 export const Title = styled.p`
-font-size:18px;
-font-family:"Roboto Slab";
-font-weight:900;
-display:flex;
-margin-left:5px;
+    font-size:18px;
+    position:relative;
+    left:1rem;
+    font-family:"Roboto Slab";
+    font-weight:900;
+    display:flex;
+    transition:0.7s;    
+    background:transparent;
+    width:57rem;
 `
 export const Description = styled.p`
-display:flex;
-font-size:14px;
-font-family:"Roboto Slab";
-margin-left:5px;
+    display:flex;
+    font-size:14px;
+    font-family:"Roboto Slab";
+    margin-left:1rem;
+    margin-top:-0.5rem;
+`
+export const Container = styled.div`
+    width:0%;
+    height:8rem;
+    background:transparent;
+    position:relative;
+    left:3rem;
+    margin-bottom:5px;
+    transition:0.5s;
+    border-bottom: 4px solid rgb(220,220,220);
+    :hover{
+        width:58.5%;
+        border-bottom: 4px solid rgb(37,199,58);
+        ${Title}{
+            color:rgb(37,199,58);
+        }
+    }
 `

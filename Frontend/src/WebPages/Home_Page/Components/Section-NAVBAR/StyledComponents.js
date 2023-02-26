@@ -9,7 +9,7 @@ export const Container = styled.div`
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index:2; 
 `
-export const NavButton = styled.button`
+export const NavButton = styled.button`  
     width:8rem;
     height: 100%;
     float:right;
@@ -37,7 +37,7 @@ export const Logo = styled.img`
     position: fixed;
     transition: transform .8s;
     top:0rem;
-    left:46rem;
+    left:50rem;
     animation: fadeIn 6s;
     height: 5rem;
     z-index:2;
@@ -65,17 +65,6 @@ export const ProductsButton = styled.button`
     animation: fadeIn 2s;
     &:hover {
         background-color:rgb(240, 240, 240);
-        ${Logo}{
-            transform:scale(0.5);
-            top:-1rem;
-        }
-    }
-
-    :focus{
-         ${Logo}{
-            transform:scale(0.5);
-            top:-1rem;
-        }
     }
     @keyframes fadeIn {
     0% {

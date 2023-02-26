@@ -116,6 +116,11 @@ export const TopSalesData = [
     {name: "Deadpool the greatest hero", img:product11, position:"3"},
     {name: "Red Dead Redemption 2", img:product13, position:"4"},
 ]
-export const Articles = [
-    {title:"Bla", description:"bla"},
+export const ArticlesData = [
+    {title:"Wake up America",author:"Candace Owens", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ", img:articleImage},
+    {title:"Mistakes that we do everyday",author:"Jordan Peterson", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.", img:articleImage},
+    {title:"ChatGPT will take over", author:"Jordan Peterson", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",img:articleImage},
+    {title:"The unseen face of pornografy",author:"Candace Owens", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",img:articleImage},
+    {title:"Fata nevazuta homosexualitatii",author:"Virgiliu Gheorghe", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",img:articleImage},
+    
 ]

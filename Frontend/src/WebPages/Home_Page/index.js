@@ -7,6 +7,7 @@ import { PresaleProducts } from "../../Database/DummyDatabase"
 import { ReduceProducts } from "../../Database/DummyDatabase"
 import { ComicMagazines } from "../../Database/DummyDatabase"
 import { TopSalesData } from "../../Database/DummyDatabase"
+import { ArticlesData } from "../../Database/DummyDatabase"
 
 import Navbar from "./Components/Section-NAVBAR"
 import Prompter from "./Components/Section-PROMPTER"
@@ -32,7 +33,7 @@ export default function HomePage () {
                 <Reduced items={ReduceProducts}></Reduced>
                 <Comics items = {ComicMagazines}></Comics>
                 <TopSales items = {TopSalesData}></TopSales>
-                <Articles></Articles> 
+                <Articles items={ArticlesData}></Articles> 
             </PageContent>
             <Footer></Footer>
        

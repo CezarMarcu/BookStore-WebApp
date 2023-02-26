@@ -62,7 +62,8 @@ export const Container = styled.div`
     height:auto;
     width:100%;
     overflow:hide;
-    background:transparent;
+    background:white;
     display:flex;
     flex-direction: column;
+    transition:0.5s;
 `
