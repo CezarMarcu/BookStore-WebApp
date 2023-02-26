@@ -1,19 +1,12 @@
 import styled from "styled-components";
 
-
-export const Container = styled.div`
-    height:auto;
-    width:100%;
-    background:transparent;
-    display:flex;
-    flex-direction: column;
-`
 export const Title = styled.p`
     position:relative;
     font-family: 'Roboto Slab';
     font-size:25px;
     top:2rem;
-    color:rgb(127,127,127)
+    color:rgb(127,127,127);
+    transition:0.5s;
 `
 export const ProductsContainer = styled.div`
     position:relative;
@@ -26,17 +19,19 @@ export const ProductsContainer = styled.div`
     gap:10px;
     top:-1rem;
     margin-bottom:5rem;
+    @media screen and (max-width: 1499px){flex-wrap:wrap;}       
 `
 export const CategoriesContainer = styled.div`
     position:relative;
     display:flex;
-    flex-direction:row;
     width:auto;
     height:3rem;
     border-top: 2px solid rgb(230,230,230);
     margin: 0 auto;
-    background:gray;
+    background:transparent;
     top:-5rem;
+    flex-wrap:wrap;
+    @media screen and (max-width: 679px){}
 `
 export const CategoryButton = styled.button`
     width:8rem;
@@ -62,4 +57,12 @@ export const CategoryButton = styled.button`
     &:hover {
         background-color: black;
     }
+`
+export const Container = styled.div`
+    height:auto;
+    width:100%;
+    overflow:hide;
+    background:transparent;
+    display:flex;
+    flex-direction: column;
 `

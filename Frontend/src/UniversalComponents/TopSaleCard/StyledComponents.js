@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const ProductDetailsContainer = styled.div`
-    height:3.5rem;
-    width:11.5rem;
-    background:red;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 3px;
-`
 export const Title = styled.p`
     font-size:16px;
     position:relative;
@@ -32,8 +24,7 @@ export const Position = styled.span`
     font: 22px Roboto slab, sans-serif;
 `
 export const ProductImage = styled.img`
-    position:relative;
-    height:28rem;
+    height:19rem;
     width:11.5rem;
     transition:0.5s;
     margin:0 auto;
@@ -45,7 +36,7 @@ export const Container = styled.div`
     width:19rem;
     display:flex;
     flex-direction:column;
-    background:transparent;
+    background:relative;
     border-radius:0.5rem;
     :hover{
         ${Title}{

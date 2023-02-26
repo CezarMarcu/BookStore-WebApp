@@ -5,7 +5,7 @@ const TopSaleCard  = (props) => {
         <Container>
             <ProductImage src={props.img}></ProductImage>
             <Title>{props.title}</Title>
-            <Position>{props.position}</Position>
+            {/* <Position>{props.position}</Position> */}
         </Container>
     )
 }

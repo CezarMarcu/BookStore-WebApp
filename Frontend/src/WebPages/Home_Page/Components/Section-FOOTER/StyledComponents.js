@@ -8,17 +8,14 @@ import {CreditCard2BackFill} from '@styled-icons/bootstrap/CreditCard2BackFill'
 import {ShieldFillCheck} from '@styled-icons/bootstrap/ShieldFillCheck'
 
 export const Container = styled.div`
-    position:relative;
     width:100%;
     height:auto;
     background:rgb(229,232,235);
-    top:228rem;
 `
 export const Content = styled.div`
-    position:relative;
     width:66%;
     height:auto;
-    background:transparent;
+    background:rgb(229,232,235);
     margin:0 auto;
     display:flex;
     flex-direction:row;   
@@ -52,6 +49,7 @@ export const Text = styled.p`
     font-family:'Roboto slab';
     margin-top:0rem;
     margin-left:1rem;
+    font-size:12px;
     width:24rem;
     text-align: left;
 `
@@ -123,7 +121,7 @@ export const InputValue = styled.p`
     transition:0.5s;
 `
 export const InputForm = styled.input`
-    width:100%;
+    width:99%;
     height:0%;
     background:transparent;
     border-top:none;
@@ -136,7 +134,7 @@ export const InputForm = styled.input`
     }
 `
 export const Input = styled.div`
-    width:27rem;
+    width:100%   ;
     height:4rem;
     display:flex;
     flex-direction:column;
