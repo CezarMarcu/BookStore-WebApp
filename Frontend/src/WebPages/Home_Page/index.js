@@ -19,6 +19,8 @@ import Comics from "./Components/Section-COMICS"
 import TopSales from "./Components/Section-TOP_SALES"
 import Articles from "./Components/Section-ARTICLES"
 import Footer from "./Components/Section-FOOTER"
+import Carousel from "../../UniversalComponents/Carousel"
+
 
 export default function HomePage () {
     return (
@@ -26,7 +28,8 @@ export default function HomePage () {
             <Header></Header>
             <PageContent>
                 <Navbar></Navbar>
-                <Prompter></Prompter>
+                <Carousel></Carousel>
+                {/* <Prompter></Prompter> */}
                 <Offers></Offers>
                 <Services></Services>
                 <Presales items={PresaleProducts}></Presales>
@@ -35,9 +38,7 @@ export default function HomePage () {
                 <TopSales items = {TopSalesData}></TopSales>
                 <Articles items={ArticlesData}></Articles> 
             </PageContent>
-            <Footer></Footer>
-       
-        
+            <Footer></Footer>       
         </>
     )
 }
