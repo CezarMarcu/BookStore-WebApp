@@ -19,8 +19,7 @@ import Comics from "./Components/Section-COMICS"
 import TopSales from "./Components/Section-TOP_SALES"
 import Articles from "./Components/Section-ARTICLES"
 import Footer from "./Components/Section-FOOTER"
-import Carousel from "../../UniversalComponents/Carousel"
-
+import MyCarousel from "../../UniversalComponents/Carousel"
 
 export default function HomePage () {
     return (
@@ -28,7 +27,7 @@ export default function HomePage () {
             <Header></Header>
             <PageContent>
                 <Navbar></Navbar>
-                <Carousel></Carousel>
+                <MyCarousel></MyCarousel>
                 {/* <Prompter></Prompter> */}
                 <Offers></Offers>
                 <Services></Services>

@@ -27,8 +27,9 @@ const product11 = require("./Resources/product11.jpg");
 const product12 = require("./Resources/product12.jpg");
 const product13 = require("./Resources/product13.jpg")
 export const articleImage = require("./Resources/AI.png")
-export const Cover6  = require("./Resources/Cover6.png")
-
+export const Slide1  = require("./Resources/Cover6.png")
+export const Slide2  =  require("./Resources/Offer2.png")
+export const Slide3 = require("./Resources/Offer3.png")
 
 
 export const PresaleProducts = [
