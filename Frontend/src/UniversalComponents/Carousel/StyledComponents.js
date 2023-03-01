@@ -8,6 +8,14 @@ export const Container = styled.div`
     overflow: hidden;
     background-color:transparent;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    @keyframes slideUp{
+        0% {
+                transform: translateX(10rem);
+                opacity: 0;
+            }
+        100%{
+            opacity: 1;
+        }
 `
 export const Dots = styled.div`
     position: relative;
@@ -16,7 +24,7 @@ export const Dots = styled.div`
     height: 3rem;
     background-color:transparent;
     margin:0 auto;
-    z-index: 2;
+    z-index:1;
 `
 export const Dot = styled.span`
     display: inline-block;
@@ -36,12 +44,9 @@ export const Slider = styled.div`
 
 export const Element= styled.img`
     position: relative;
-    display: inline-block;
     height: 30rem;
     width: 100%;
     object-fit:cover;
     top:-2rem;
-    left:0rem;
-    border-radius: 10px;
 `
 
