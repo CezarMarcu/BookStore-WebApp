@@ -54,7 +54,7 @@ export const ComicMagazines = [
 ]
 
 export const DropDownMenuData = [
-    {productCategory:"CARTI", productDetails:[
+    {image:img1,productCategory:"CARTI", productDetails:[
         {name:"Audiobooks", subcategories:[]},
 
         {name:"Arta si Arhitectura", 
@@ -96,7 +96,7 @@ export const DropDownMenuData = [
     
     
     ]},
-    {productCategory:"CEAI", productDetails:[
+    {image:img2,productCategory:"CEAI", productDetails:[
         {name:"CEAI", subcategories:["Ceai verde","Ceai negru","Ceai rosu","Infuzie","Pentru cunoscatori"]},
         
         {name:"CANI, CESTI  ", subcategories:["Cani cu sita si capac","Cani","Ceai","Cani de calatorie","Cani giftbox"]},
@@ -105,7 +105,7 @@ export const DropDownMenuData = [
         
         {name:"ACCESORII PENTRU CEAI", subcategories:["Suport pliculete", "Infuzoare", "Site"]}]
     },
-    {productCategory:"CURSURI", productDetails:[
+    {image:img3,productCategory:"CURSURI", productDetails:[
         {name:"INTELIGENTA ARTIFICIALA", subcategories:["Novice", "Intermediar", "Avansat"]},
         {name:"AUTOMATICA", subcategories:["Bazele automatizarilor", "Programare PLC", "Electronica"]},
         {name:"GRAPHIC DESIGN", subcategories:["Photoshop", "Ilustrator", "Figma"]},
@@ -115,18 +115,18 @@ export const DropDownMenuData = [
         {name:"MATEMATICA", subcategories:["Algebra", "Geometrie & Trigonometrie", "Analiza matematica"]},
         {name:"RETELISTICA", subcategories:["Novice", "Intermediar", "Avansat"]},
     ]},
-    {productCategory:"POSTERE", productDetails:[
+    {image:img4,productCategory:"POSTERE", productDetails:[
         {name:"MARVEL", subcategories:[]},
         {name:"DC", subcategories:[]},
         {name:"BANDS", subcategories:[]},
         {name:"MOVIES", subcategories:[]},
         {name:"CREATIVE PEOPLE", subcategories:[]},
     ]},
-    {productCategory:"IMPRIMEURI", productDetails:[
+    {image:img5,productCategory:"IMPRIMEURI", productDetails:[
         {name:"CREAZA", subcategories:[]},
         {name:"PRODUSE", subcategories:[]},
     ]},
-    {productCategory:"MANGA", productDetails:[
+    {image:img6,productCategory:"MANGA", productDetails:[
         {name:"NARUTO", subcategories:[]},
         {name:"BLEACH", subcategories:[]},
         {name:"DEMON SLAYER", subcategories:[]},
@@ -137,12 +137,12 @@ export const DropDownMenuData = [
         {name:"ATACK ON TITAN", subcategories:[]},
         {name:"FULL METAL ALCH", subcategories:[]},
     ]},
-    {productCategory:"REVISTE", productDetails:[
+    {image:img7,productCategory:"REVISTE", productDetails:[
         {name:"BENZI DESENATE", subcategories:[]},
         {name:"REVISTE IN LIMBA ROMANA", subcategories:[]},
         {name:"REVISTE STRAINE", subcategories:[]},
     ]},
-    {productCategory:"FILME", productDetails:[
+    {image:img9,productCategory:"FILME", productDetails:[
         {name:"AVENTURA", subcategories:[]},
         {name:"ACTIUNE", subcategories:[]},
         {name:"COMEDIE", subcategories:[]},
@@ -162,7 +162,7 @@ export const DropDownMenuData = [
         {name:"BIOGRAFIC", subcategories:[]},
         {name:"SERIALE", subcategories:[]},
     ]},
-    {productCategory:"PODCASTURI", productDetails:[
+    {image:img10,productCategory:"PODCASTURI", productDetails:[
         {name:"Audiobooks", subcategories:[]},
 
         {name:"Arta si Arhitectura", 
@@ -204,7 +204,7 @@ export const DropDownMenuData = [
     
     
     ]},
-    {productCategory:"PAPETARIE", productDetails:[
+    {image:img11,productCategory:"PAPETARIE", productDetails:[
         {name:"CAIETE", subcategories:[]},
         {name:"INSTRUMENTE SCRIS", subcategories:[]},
         {name:"PICTURA SI DESEN", subcategories:[]},
@@ -212,7 +212,7 @@ export const DropDownMenuData = [
 
         
     ]},
-    {productCategory:"JUCARII", productDetails:[
+    {image:img12,productCategory:"JUCARII", productDetails:[
         {name:"PLUSURI", subcategories:[]},
         {name:"LEGO", subcategories:[]},
         {name:"PAPUSI", subcategories:[]},
@@ -221,7 +221,7 @@ export const DropDownMenuData = [
         {name:"FIGURINE ACTIUNE", subcategories:[]},
         {name:"DIVERSE", subcategories:[]},
     ]},
-    {productCategory:"JOCURI", productDetails:[
+    {image:img13,productCategory:"JOCURI", productDetails:[
         {name:"ACTIUNE", subcategories:[]},
         {name:"FPS", subcategories:[]},
         {name:"STRATEGY", subcategories:[]},
@@ -230,7 +230,7 @@ export const DropDownMenuData = [
         {name:"RACING", subcategories:[]},
         {name:"SIMULATOR", subcategories:[]},
     ]},
-    {productCategory:"APPLE", productDetails:[
+    {image:img14,productCategory:"APPLE", productDetails:[
         {name:"IPHONE", subcategories:[]},
         {name:"MACBOOK", subcategories:[]},
         {name:"IPODS", subcategories:[]},
@@ -239,12 +239,12 @@ export const DropDownMenuData = [
         {name:"WATCH", subcategories:[]},
         {name:"ACCESORIES", subcategories:[]},
     ]},
-    {productCategory:"DESENE", productDetails:[
+    {image:img15,productCategory:"DESENE", productDetails:[
         {name:"DISNEY", subcategories:[]},
         {name:"DREAMWORKS", subcategories:[]},
         {name:"ROMANESTI", subcategories:[]},
     ]},
-    {productCategory:"GOURMET", productDetails:[
+    {image:img16,productCategory:"GOURMET", productDetails:[
         {name:"CIOCOLATA", subcategories:[]},
         {name:"PRAJITURI", subcategories:[]},
         {name:"PRODUSE TRADITIONALE", subcategories:[]},

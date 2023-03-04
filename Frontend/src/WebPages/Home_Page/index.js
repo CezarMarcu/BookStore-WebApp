@@ -8,6 +8,7 @@ import { ReduceProducts } from "../../Database/DummyDatabase"
 import { ComicMagazines } from "../../Database/DummyDatabase"
 import { TopSalesData } from "../../Database/DummyDatabase"
 import { ArticlesData } from "../../Database/DummyDatabase"
+import { DropDownMenuData } from "../../Database/DummyDatabase"
 
 import Navbar from "./Components/Section-NAVBAR"
 import Prompter from "./Components/Section-PROMPTER"
@@ -20,13 +21,15 @@ import TopSales from "./Components/Section-TOP_SALES"
 import Articles from "./Components/Section-ARTICLES"
 import Footer from "./Components/Section-FOOTER"
 import MyCarousel from "../../UniversalComponents/Carousel"
+import ColapsiblePanel from "./Components/Section-COLAPSIBLE/ColapsiblePanel"
 
 export default function HomePage () {
     return (
         <>  
             <Header></Header>
             <PageContent>
-                <Navbar></Navbar>
+                <ColapsiblePanel items = {DropDownMenuData}></ColapsiblePanel>
+                {/* <Navbar></Navbar> */}
                 <MyCarousel></MyCarousel>
                 {/* <Prompter></Prompter> */}
                 <Offers></Offers>
